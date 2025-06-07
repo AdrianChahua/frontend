@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student API Frontend</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Student Management</h1>
+
+  <section>
+    <h2>Add Student</h2>
+    <form id="add-student-form">
+      <input type="text" id="firstname" placeholder="First Name" required />
+      <input type="text" id="lastname" placeholder="Last Name" required />
+      <input type="text" id="gender" placeholder="Gender" required />
+      <input type="number" id="age" placeholder="Age" required />
+      <button type="submit">Add Student</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>All Students</h2>
+    <button onclick="fetchStudents()">Refresh</button>
+    <ul id="students-list"></ul>
+  </section>
+
+  <section>
+    <h2>Manage Student by ID</h2>
+    <input type="number" id="student-id" placeholder="Student ID" />
+    <button onclick="getStudent()">Get</button>
+    <button onclick="deleteStudent()">Delete</button>
+    <br/>
+    <input type="text" id="update-firstname" placeholder="New First Name" />
+    <input type="text" id="update-lastname" placeholder="New Last Name" />
+    <input type="text" id="update-gender" placeholder="New Gender" />
+    <input type="number" id="update-age" placeholder="New Age" />
+    <button onclick="updateStudent()">Update</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
