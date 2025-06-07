@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8000"; // cambia esto si la API está en otro host
+const API_URL = "http://3.144.126.236:8000"; // cambia esto si la API está en otro host
 
 document.getElementById("add-student-form").addEventListener("submit", async function (e) {
   e.preventDefault();
